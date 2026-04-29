@@ -8,7 +8,65 @@
 <style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:Georgia,'Times New Roman',serif;background:#f9f9f6;color:#1a1a1a;line-height:1.7}.site-header{background:#fff;border-bottom:1px solid #e8e8e4;padding:14px 24px}.site-header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}.site-logo{font-family:sans-serif;font-size:.78em;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#1a73e8;text-decoration:none}.site-nav{font-family:sans-serif;font-size:.8em;color:#888}.page-wrap{max-width:900px;margin:0 auto;padding:40px 24px 80px}.bluf{background:linear-gradient(135deg,#f0f4ff 0%,#e8f0fe 100%);border-left:4px solid #1a73e8;padding:20px 24px;margin:0 0 24px 0;border-radius:0 4px 4px 0;font-family:sans-serif;font-size:1.05em;line-height:1.7}.editorial{font-family:sans-serif;font-size:.88em;color:#555;margin:0 0 24px 0;line-height:1.7}table{width:100%;border-collapse:collapse;margin:32px 0;font-size:.97em}thead tr{background:#1a73e8;color:#fff}thead th{padding:12px 16px;text-align:left;font-family:sans-serif}tbody tr:nth-child(even){background:#f8f9fa}tbody td{padding:11px 16px;border-bottom:1px solid #e0e0e0;font-family:sans-serif;font-size:.93em}h2{font-size:1.4em;color:#1a1a1a;margin:40px 0 16px 0;font-weight:bold}h3{font-size:1.1em;color:#1a1a1a;margin:28px 0 10px 0}p{font-family:sans-serif;font-size:.95em;color:#333;line-height:1.8;margin:0 0 16px 0}blockquote{border-left:4px solid #1a73e8;background:#f8f9fa;padding:16px 24px;margin:24px 0;font-style:italic;color:#333;font-family:sans-serif;font-size:.95em;line-height:1.7}.summary-box{background:linear-gradient(135deg,#f0f4ff 0%,#e8f0fe 100%);border-left:4px solid #1a73e8;padding:20px 24px;margin:32px 0;border-radius:0 4px 4px 0;font-family:sans-serif;font-size:.95em;line-height:1.7}.cta-wrap{background:linear-gradient(135deg,#f0f4ff 0%,#e8f0fe 100%);border-radius:8px;padding:32px;margin:40px 0}.cta-wrap h2{color:#1a73e8;margin:0 0 16px 0;font-size:1.2em}.cta-grid{display:flex;flex-wrap:wrap;gap:20px}.cta-card{flex:1 1 280px;background:#fff;border-left:4px solid #1a73e8;padding:24px 28px;border-radius:6px}.cta-card h3{color:#1a73e8;margin:0 0 10px 0;font-size:1em}.cta-card p{font-size:.9em;color:#555;margin:0 0 16px 0}.cta-card.blue2{border-left-color:#1565c0}.cta-card.blue2 h3{color:#1565c0}.btn-blue1{display:inline-block;background:#1a73e8;color:#fff;padding:12px 24px;border-radius:4px;text-decoration:none;font-weight:bold;font-family:sans-serif;font-size:.9em}.btn-blue2{display:inline-block;background:#1565c0;color:#fff;padding:12px 24px;border-radius:4px;text-decoration:none;font-weight:bold;font-family:sans-serif;font-size:.9em}.disclaimer{font-size:.85em;color:#666;font-style:italic;margin-top:32px;font-family:sans-serif}.sources{font-size:.85em;color:#666;border-top:1px solid #e0e0e0;padding-top:16px;margin-top:24px;font-family:sans-serif}.sources a{color:#1a73e8;display:block;margin-bottom:4px}.site-footer{background:#1a1a1a;color:rgba(255,255,255,.5);text-align:center;padding:32px 24px;font-family:sans-serif;font-size:.78em;line-height:1.8}.site-footer a{color:rgba(255,255,255,.6);text-decoration:none}@media(max-width:600px){.cta-grid{flex-direction:column}}</style>
 </head>
 <body>
-<header class="site-header"><div class="site-header-inner"><a class="site-logo" href="/">BestBuyBounty.com</a><span class="site-nav">Independent NeoLife Reference</span></div></header>
+<style>
+.site-header{background:#fff;border-bottom:1px solid #e8e8e4;padding:0 24px;position:sticky;top:0;z-index:100;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.site-header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px}
+.site-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.site-logo-text{font-family:sans-serif;font-size:.82em;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#1a1a1a;line-height:1.1}
+.site-logo-sub{font-size:.65em;font-weight:400;letter-spacing:.04em;color:#2e7d32;text-transform:none;display:block}
+.site-nav{display:flex;align-items:center;gap:6px;font-family:sans-serif;font-size:.82em}
+.nav-item{position:relative}
+.nav-btn{display:flex;align-items:center;gap:4px;padding:7px 13px;color:#444;border-radius:5px;font-weight:500;white-space:nowrap;cursor:pointer;background:none;border:none;font-size:inherit;font-family:inherit;transition:background .15s,color .15s}
+.nav-btn:hover{background:#f5f5f2;color:#2e7d32}
+.nav-btn svg{width:11px;height:11px;transition:transform .2s;opacity:.6}
+.nav-item:hover .nav-btn svg{transform:rotate(180deg)}
+.dropdown{display:none;position:absolute;top:calc(100% + 4px);right:0;background:#fff;border:1px solid #e4e4e0;border-radius:8px;box-shadow:0 12px 32px rgba(0,0,0,.10);min-width:230px;padding:8px 0;z-index:200}
+.nav-item:hover .dropdown{display:block}
+.dd-label{padding:8px 16px 4px;font-size:.68em;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b0b0a8}
+.dropdown a{display:block;padding:7px 16px;color:#333;text-decoration:none;font-size:.86em;line-height:1.4;transition:background .12s,color .12s}
+.dropdown a:hover{background:#f5f5f2;color:#2e7d32}
+.dd-divider{height:1px;background:#f0f0eb;margin:6px 0}
+.nav-shop{display:inline-flex;align-items:center;gap:5px;background:#2e7d32;color:#fff!important;padding:8px 16px;border-radius:5px;font-weight:600;text-decoration:none;font-size:.82em;transition:background .15s}
+.nav-shop:hover{background:#1b5e20}
+@media(max-width:700px){.nav-item{display:none}.nav-shop{font-size:.78em;padding:7px 13px}}
+</style>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="/">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="6" fill="#2e7d32"/><path d="M8 22 C8 22 12 10 16 10 C20 10 24 22 24 22" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="16" cy="9" r="2.5" fill="#a5d6a7"/><path d="M13 17 C13 17 14.5 14 16 14 C17.5 14 19 17 19 17" stroke="#a5d6a7" stroke-width="1.5" stroke-linecap="round" fill="none"/></svg>
+      <span class="site-logo-text">BestBuyBounty<span class="site-logo-sub">Independent NeoLife Reference</span></span>
+    </a>
+    <nav class="site-nav">
+      <div class="nav-item">
+        <button class="nav-btn">NeoLife <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg></button>
+        <div class="dropdown">
+          <div class="dd-label">Company</div>
+          <a href="/neolife-hub/">NeoLife Hub — Overview</a>
+          <a href="/neolife-history/">NeoLife History</a>
+          <a href="/neolife-scientific-advisory-board/">Scientific Advisory Board</a>
+          <a href="/neolife-business-opportunity/">Business Opportunity</a>
+          <a href="/direct-selling/">Direct Selling — The Facts</a>
+          <div class="dd-divider"></div>
+          <div class="dd-label">Nutrition</div>
+          <a href="/neolife-pro-vitality/">Pro Vitality+</a>
+          <a href="/neolife-carotenoid-complex/">Carotenoid Complex</a>
+          <a href="/neolife-salmon-oil-plus/">Salmon Oil Plus</a>
+          <div class="dd-divider"></div>
+          <div class="dd-label">Weight Management</div>
+          <a href="/neolife-weight-management/">Weight Management</a>
+          <a href="/neofit90/">NeoFit90 — 90-Day Program</a>
+          <a href="/90-day-weight-loss-science/">90-Day Weight Loss Science</a>
+          <div class="dd-divider"></div>
+          <div class="dd-label">Lifestyle</div>
+          <a href="/neolife-golden-home-care/">Golden Home Care</a>
+          <a href="/neolife-sustainability/">Sustainability</a>
+          <a href="/neolife-nutriance-organic/">Nutriance Organic</a>
+        </div>
+      </div>
+      <a class="nav-shop" href="https://se.neolifeshop.com/i/shop.html?sponsor=41-830928" target="_blank" rel="nofollow noopener sponsored">Shop NeoLife →</a>
+    </nav>
+  </div>
+</header>
 <div class="page-wrap">
 
 <div class="bluf"><strong>Key Takeaway:</strong> Direct selling is a legal, regulated, and documented industry generating approximately $164 billion in global retail sales in 2023, with 104.3 million independent representatives worldwide. The FTC legally distinguished legitimate MLM from pyramid schemes in 1979 — a ruling that still governs the industry. NeoLife, founded in 1958, has never failed. Jim Rohn, Tony Robbins, Les Brown — all built early careers in NeoLife's distribution network.</div>
@@ -60,10 +118,63 @@
 </div>
 
 </div>
+<style>
+.site-footer{background:#1a1a18;color:rgba(255,255,255,.55);font-family:sans-serif;font-size:.82em;line-height:1.8;margin-top:80px}
+.footer-inner{max-width:1100px;margin:0 auto;padding:56px 24px 32px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.footer-brand-name{font-size:1em;font-weight:700;color:rgba(255,255,255,.9);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.footer-brand-desc{font-size:.92em;color:rgba(255,255,255,.45);line-height:1.7;max-width:220px;margin-bottom:16px}
+.footer-disclosure{font-size:.82em;color:rgba(255,255,255,.35);line-height:1.7;padding:12px 14px;border:1px solid rgba(255,255,255,.08);border-radius:6px}
+.footer-col-title{font-size:.72em;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:14px}
+.footer-col a{display:block;color:rgba(255,255,255,.55);text-decoration:none;padding:3px 0;font-size:.92em;transition:color .15s}
+.footer-col a:hover{color:#81c784}
+.footer-ftc{border-top:1px solid rgba(255,255,255,.06);padding:20px 24px;max-width:1100px;margin:0 auto;font-size:.8em;color:rgba(255,255,255,.3);line-height:1.7}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding:16px 24px;max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:.78em;color:rgba(255,255,255,.25)}
+.footer-bottom a{color:rgba(255,255,255,.35);text-decoration:none}
+.footer-bottom a:hover{color:rgba(255,255,255,.65)}
+@media(max-width:760px){.footer-inner{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}
+@media(max-width:480px){.footer-inner{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
+</style>
 <footer class="site-footer">
-<p>BestBuyBounty.com — Independent NeoLife Reference</p>
-<p>Sponsor ID: 41-830928 · <a href="https://se.neolifeshop.com/i/shop.html?sponsor=41-830928" rel="nofollow noopener sponsored">se.neolifeshop.com</a></p>
-<p style="margin-top:8px;">Affiliate disclosure: Links may earn a commission at no extra cost to you.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:12px;display:block"><rect width="36" height="36" rx="7" fill="#2e7d32"/><path d="M9 25 C9 25 13.5 11 18 11 C22.5 11 27 25 27 25" stroke="#fff" stroke-width="2.2" stroke-linecap="round" fill="none"/><circle cx="18" cy="10" r="3" fill="#a5d6a7"/><path d="M14.5 19 C14.5 19 16 16 18 16 C20 16 21.5 19 21.5 19" stroke="#a5d6a7" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+      <div class="footer-brand-name">BestBuyBounty.com</div>
+      <div class="footer-brand-desc">Independent reference for NeoLife products. Science-backed since 1958. Verified data, peer-reviewed research.</div>
+      <div class="footer-disclosure"><strong style="color:rgba(255,255,255,.55);">Affiliate Disclosure:</strong> BestBuyBounty.com is an independent NeoLife distributor website. Some links may be affiliate links — meaning this site may receive a commission if you purchase through them, at no additional cost to you. Sponsor ID: 41-830928. This does not influence what we write or how we evaluate products.</div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Company</div>
+      <a href="/neolife-hub/">NeoLife Hub</a>
+      <a href="/neolife-history/">NeoLife History</a>
+      <a href="/neolife-scientific-advisory-board/">Scientific Advisory Board</a>
+      <a href="/neolife-business-opportunity/">Business Opportunity</a>
+      <a href="/direct-selling/">Direct Selling — Facts</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Nutrition</div>
+      <a href="/neolife-pro-vitality/">Pro Vitality+</a>
+      <a href="/neolife-carotenoid-complex/">Carotenoid Complex</a>
+      <a href="/neolife-salmon-oil-plus/">Salmon Oil Plus</a>
+      <div class="footer-col-title" style="margin-top:20px">Weight</div>
+      <a href="/neolife-weight-management/">Weight Management</a>
+      <a href="/neofit90/">NeoFit90</a>
+      <a href="/90-day-weight-loss-science/">90-Day Science</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Lifestyle</div>
+      <a href="/neolife-golden-home-care/">Golden Home Care</a>
+      <a href="/neolife-sustainability/">Sustainability</a>
+      <a href="/neolife-nutriance-organic/">Nutriance Organic</a>
+      <div class="footer-col-title" style="margin-top:20px">Shop</div>
+      <a href="https://se.neolifeshop.com/i/shop.html?sponsor=41-830928" target="_blank" rel="nofollow noopener sponsored">Shop NeoLife (SE) →</a>
+      <a href="https://se.neolifeshop.com/i/registration.html?type=reseller&sponsor=41-830928" target="_blank" rel="nofollow noopener sponsored">Register as Distributor →</a>
+    </div>
+  </div>
+  <div class="footer-ftc"><strong style="color:rgba(255,255,255,.45);">FTC Disclosure:</strong> NeoLife products are available through independent distributors. Income claims reflect averages from NeoLife's official Average Earnings Statement and are not guarantees of individual results. Success as a NeoLife Promoter depends on personal sales effort, market conditions, and time invested. This website is not affiliated with or endorsed by NeoLife International. All product information is for informational purposes only and does not constitute medical advice.</div>
+  <div class="footer-bottom">
+    <span>© 2026 BestBuyBounty.com — Independent NeoLife Reference</span>
+    <span>Sponsor ID: 41-830928 · <a href="https://se.neolifeshop.com" target="_blank" rel="nofollow noopener">se.neolifeshop.com</a></span>
+  </div>
 </footer>
 </body>
 </html>
