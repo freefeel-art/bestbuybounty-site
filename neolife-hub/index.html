@@ -533,5 +533,5 @@ body {
   </div>
 </footer>
 
-</body>
+<script>document.querySelectorAll(".nav-btn").forEach(btn=>{btn.addEventListener("click",function(e){e.stopPropagation();const dd=this.nextElementSibling;document.querySelectorAll(".dropdown").forEach(d=>{if(d!==dd)d.style.display="none"});dd.style.display=dd.style.display==="block"?"none":"block"})});document.addEventListener("click",()=>document.querySelectorAll(".dropdown").forEach(d=>d.style.display="none"));</script></body>
 </html>
