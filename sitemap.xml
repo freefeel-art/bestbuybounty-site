@@ -153,4 +153,72 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Direct Selling -->
+  <url>
+    <loc>https://bestbuybounty.com/direct-selling-facts/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tukiartikkelit — Omega-3 klusteri -->
+  <url>
+    <loc>https://bestbuybounty.com/ala-vs-epa-vs-dha-plant-omega3/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://bestbuybounty.com/why-fish-oil-supplements-not-equal/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tukiartikkelit — Carotenoid klusteri -->
+  <url>
+    <loc>https://bestbuybounty.com/zeaxanthin-immune-function-2025-research/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://bestbuybounty.com/beta-carotene-supplement-vs-food/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tukiartikkelit — Tre-en-en klusteri -->
+  <url>
+    <loc>https://bestbuybounty.com/phytosterols-cell-membrane-science/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://bestbuybounty.com/how-to-get-plant-sterols-daily/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Tukiartikkelit — Muut -->
+  <url>
+    <loc>https://bestbuybounty.com/eco-cleaning-greenwashing-chemistry/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://bestbuybounty.com/menopause-weight-management-without-glp1/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
